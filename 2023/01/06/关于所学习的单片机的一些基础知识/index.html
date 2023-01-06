@@ -1,0 +1,228 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>豆芽菜的blog | 豆芽菜的blog</title><meta name="keywords" content="豆芽菜，博客"><meta name="author" content="豆芽菜"><meta name="copyright" content="豆芽菜"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="关于学习使用的STC89C52RC单片机的一些知识STC89C52RC的基本信息 公司：STC公司位数：8位RAM：512字节ROM：8K(flash)工作频率：11.0592MHz（工作频率取决于开发板晶振的频率）  单片机的命名规则   STC 89 c 52 RC 40 I PIDP 40    公司名称 单片机系列 工作电压（c:5.5V-3.8V） 8KROM+512字节RAM  工作频">
+<meta property="og:type" content="article">
+<meta property="og:title" content="豆芽菜的blog">
+<meta property="og:url" content="https://source.github.io/2023/01/06/%E5%85%B3%E4%BA%8E%E6%89%80%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%8D%95%E7%89%87%E6%9C%BA%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/index.html">
+<meta property="og:site_name" content="豆芽菜的blog">
+<meta property="og:description" content="关于学习使用的STC89C52RC单片机的一些知识STC89C52RC的基本信息 公司：STC公司位数：8位RAM：512字节ROM：8K(flash)工作频率：11.0592MHz（工作频率取决于开发板晶振的频率）  单片机的命名规则   STC 89 c 52 RC 40 I PIDP 40    公司名称 单片机系列 工作电压（c:5.5V-3.8V） 8KROM+512字节RAM  工作频">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2022/07/24/ErAlFN1W3IPcjkt.jpg">
+<meta property="article:published_time" content="2023-01-06T14:36:05.207Z">
+<meta property="article:modified_time" content="2022-12-30T05:20:19.904Z">
+<meta property="article:author" content="豆芽菜">
+<meta property="article:tag" content="豆芽菜，博客">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/07/24/ErAlFN1W3IPcjkt.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://source.github.io/2023/01/06/%E5%85%B3%E4%BA%8E%E6%89%80%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%8D%95%E7%89%87%E6%9C%BA%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '豆芽菜的blog',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-12-30 13:20:19'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2022/08/06/RoEmZCfOrDawAud.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2022/07/24/ErAlFN1W3IPcjkt.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">豆芽菜的blog</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">无题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-06T14:36:05.207Z" title="发表于 2023-01-06 22:36:05">2023-01-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-12-30T05:20:19.904Z" title="更新于 2022-12-30 13:20:19">2022-12-30</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="关于学习使用的STC89C52RC单片机的一些知识"><a href="#关于学习使用的STC89C52RC单片机的一些知识" class="headerlink" title="关于学习使用的STC89C52RC单片机的一些知识"></a>关于学习使用的STC89C52RC单片机的一些知识</h2><h3 id="STC89C52RC的基本信息"><a href="#STC89C52RC的基本信息" class="headerlink" title="STC89C52RC的基本信息"></a>STC89C52RC的基本信息</h3><hr>
+<p>公司：STC公司<br>位数：8位<br>RAM：512字节<br>ROM：8K(flash)<br>工作频率：11.0592MHz（工作频率取决于开发板晶振的频率）</p>
+<hr>
+<h3 id="单片机的命名规则"><a href="#单片机的命名规则" class="headerlink" title="单片机的命名规则"></a>单片机的命名规则</h3><table>
+<thead>
+<tr>
+<th align="center">STC</th>
+<th align="center">89</th>
+<th align="center">c</th>
+<th align="center">52</th>
+<th align="center">RC</th>
+<th align="center">40</th>
+<th align="center">I</th>
+<th align="center">PIDP</th>
+<th align="center">40</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">公司名称</td>
+<td align="center">单片机系列</td>
+<td align="center">工作电压（c:5.5V-3.8V）</td>
+<td align="center">8KROM+512字节RAM</td>
+<td align="center"></td>
+<td align="center">工作频率 40：工作频率可以到40MHz</td>
+<td align="center">温度工作范围 I：工业级-40℃-85摄氏度</td>
+<td align="center">封装类型为PDIP</td>
+<td align="center">管脚数为40</td>
+</tr>
+</tbody></table>
+<h3 id="芯片的结构"><a href="#芯片的结构" class="headerlink" title="芯片的结构"></a>芯片的结构</h3><h4 id="内部结构"><a href="#内部结构" class="headerlink" title="内部结构"></a>内部结构</h4><p>![[STC89C52RC单片机的块状内部结构图.png]]</p>
+<center>图1 STC89C52RC单片机的块状内部结构图</center>
+
+<ol>
+<li>8051微处理器这个内核，所有51单片机都是相同的，不同品牌厂商的51单片机的区别就在于外部的这些东西。</li>
+<li>图片右侧的部分就是I&#x2F;O口，负责数据的输入与输出，单片机的引脚就是连到I&#x2F;O口上的。</li>
+</ol>
+<p><strong>IAP是In Application Programming的首字母缩写，指用户对处理器内部的程序进行烧写的行为。</strong></p>
+<ol start="3">
+<li>图片上侧左边两个分别是SRAM（静态RAM）和(flash)ROM，第三个如图所示就是ISP监控程序。</li>
+<li>图片左侧第一个EEPROM，全称为“电可擦除可编程只读存储器”，即掉电也能存储数据的储存器；第二个看门狗，是用来防止数据外溢造成重大损失的一种硬件；复位电路：用于数据复位，防止程序一直在错误的数据中运行。</li>
+<li>图片下侧的有数据串口、、、、、</li>
+</ol>
+<p>![[Pasted image 20221228233335.png]]</p>
+<center>图2 详细的内部结构</center>
+<center>总线结构图</center>
+**所有的外部设备都是挂在总线上边的**。
+如果想访问单片机内部的数据，只要连接总线，就可以对所有的内外部设备进行访问。
+
+<h4 id="单片机管脚图"><a href="#单片机管脚图" class="headerlink" title="单片机管脚图"></a>单片机管脚图</h4><p><strong>管脚图，每个或者每部分管脚的作用尽量熟记</strong>。</p>
+<p>![[详细的内部结构.png]]</p>
+<center>图3 STC8951RC/RD+系列90C版本的管脚图</center>
+
+
+<p>![[Pasted image 20221228231359.png]]</p>
+<center>图4 STC8951RC/RD+系列HD版本的管脚图</center>
+
+<p><strong>区别90C和HD版本的方法：看单片机表面印刷字体最后几位，直接印有90C或HD字样</strong></p>
+<p>自己想的口诀：</p>
+<hr>
+<p>P0右上角，P1在左上，P2右下角，P3左中部，供电VCC，接地GND，时钟接口这里找，18、19 XTAL，RST键能复位，其他部位不常用</p>
+<hr>
+<p>这是一个8位的单片机，所以P0、P1、P2、P3四组引脚每组的引脚数都是 0-7 8个。</p>
+<h4 id="单片机的最小系统"><a href="#单片机的最小系统" class="headerlink" title="单片机的最小系统"></a>单片机的最小系统</h4><p>![[Pasted image 20221228234910.png]]</p>
+<center>图5 单片机能够运行的最小系统电路</center>
+
+<p>虽然单片机自己内部就是一个完整的系统，但是想让他能够运行，就必须有外部的电路设备参与进来，以最少的外部电路设备就能使单片机运行的电路系统，称为单片机能够运行的最小系统。</p>
+<ol>
+<li>引脚40 VCC接电源线，C5、C6是滤波电容，增加电源电流的稳定性</li>
+<li>引脚20 GND接地</li>
+<li>左下角引脚18 19 接晶振电路，为单片机提供时间，晶振每振一下，单片机内部往下走一步，没有晶振的话单片机就只会停留在第一步不动，无法进行接下来的数据处理</li>
+<li>左中部引脚9 接复位电路，复位电路的作用就是让处理数据的程序回到第一步，重新开始处理数据，RST高电平起作用，充电一瞬间电容相当于短路，此时RST充电位于高电平，随着电容逐渐充电，线路相当于断路，RST联通电阻接地回到低电平</li>
+</ol>
+<h4 id="单片机开发板结构"><a href="#单片机开发板结构" class="headerlink" title="单片机开发板结构"></a>单片机开发板结构</h4><p>![[IMG_20221229_001635.jpg]]</p>
+<center>图6 我自己的开发板</center>
+
+<p>![[普中-2&amp;普中-3&amp;普中-4开发板尺寸图_00.png]]</p>
+<center>图7 数字结构图</center>
+
+<p>![[普中-2&amp;普中-3&amp;普中-4开发板原理图_00.png]]</p>
+<center>图8 单片机原理图</center>
+
+<h4 id="开发板的TTL电平"><a href="#开发板的TTL电平" class="headerlink" title="开发板的TTL电平"></a>开发板的TTL电平</h4><p>^d8a6f1</p>
+<p>TTL电平信号规定，+5V等价于逻辑“1”，0V等价于逻辑“0”(采用二进制来表示数据时)。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://Source.github.io">豆芽菜</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://source.github.io/2023/01/06/%E5%85%B3%E4%BA%8E%E6%89%80%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%8D%95%E7%89%87%E6%9C%BA%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">https://source.github.io/2023/01/06/%E5%85%B3%E4%BA%8E%E6%89%80%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%8D%95%E7%89%87%E6%9C%BA%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://Source.github.io" target="_blank">豆芽菜的blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://s2.loli.net/2022/07/24/ErAlFN1W3IPcjkt.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2022/07/23/%E4%BB%A3%E7%A0%81/"><img class="next-cover" src="https://s2.loli.net/2022/07/24/ErAlFN1W3IPcjkt.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">代码演示</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://s2.loli.net/2022/08/06/RoEmZCfOrDawAud.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">豆芽菜</div><div class="author-info__description">(灬ꈍ εꈍ灬)</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/SourceYH" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:985827631@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E5%AD%A6%E4%B9%A0%E4%BD%BF%E7%94%A8%E7%9A%84STC89C52RC%E5%8D%95%E7%89%87%E6%9C%BA%E7%9A%84%E4%B8%80%E4%BA%9B%E7%9F%A5%E8%AF%86"><span class="toc-number">1.</span> <span class="toc-text">关于学习使用的STC89C52RC单片机的一些知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#STC89C52RC%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF"><span class="toc-number">1.1.</span> <span class="toc-text">STC89C52RC的基本信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%95%E7%89%87%E6%9C%BA%E7%9A%84%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99"><span class="toc-number">1.2.</span> <span class="toc-text">单片机的命名规则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8A%AF%E7%89%87%E7%9A%84%E7%BB%93%E6%9E%84"><span class="toc-number">1.3.</span> <span class="toc-text">芯片的结构</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%86%85%E9%83%A8%E7%BB%93%E6%9E%84"><span class="toc-number">1.3.1.</span> <span class="toc-text">内部结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%95%E7%89%87%E6%9C%BA%E7%AE%A1%E8%84%9A%E5%9B%BE"><span class="toc-number">1.3.2.</span> <span class="toc-text">单片机管脚图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%95%E7%89%87%E6%9C%BA%E7%9A%84%E6%9C%80%E5%B0%8F%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.3.3.</span> <span class="toc-text">单片机的最小系统</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%95%E7%89%87%E6%9C%BA%E5%BC%80%E5%8F%91%E6%9D%BF%E7%BB%93%E6%9E%84"><span class="toc-number">1.3.4.</span> <span class="toc-text">单片机开发板结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E6%9D%BF%E7%9A%84TTL%E7%94%B5%E5%B9%B3"><span class="toc-number">1.3.5.</span> <span class="toc-text">开发板的TTL电平</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/01/06/%E5%85%B3%E4%BA%8E%E6%89%80%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%8D%95%E7%89%87%E6%9C%BA%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" title="无题"><img src="https://s2.loli.net/2022/07/24/ErAlFN1W3IPcjkt.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2023/01/06/%E5%85%B3%E4%BA%8E%E6%89%80%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%8D%95%E7%89%87%E6%9C%BA%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" title="无题">无题</a><time datetime="2023-01-06T14:36:05.207Z" title="发表于 2023-01-06 22:36:05">2023-01-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/07/23/%E4%BB%A3%E7%A0%81/" title="代码演示">代码演示</a><time datetime="2022-07-23T09:23:00.000Z" title="发表于 2022-07-23 17:23:00">2022-07-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/07/22/hello-world/" title="Hello World"><img src="https://s2.loli.net/2022/07/24/ErAlFN1W3IPcjkt.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2022/07/22/hello-world/" title="Hello World">Hello World</a><time datetime="2022-07-22T10:49:21.719Z" title="发表于 2022-07-22 18:49:21">2022-07-22</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By 豆芽菜</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
